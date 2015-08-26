@@ -3,8 +3,8 @@
     var type = opt.type;
     var postid = opt.postid
     var url = "http://www.kuaidi100.com/query?type=" + type
-      +"&postid="  + postid 
-      +"&id=1&valicode=&temp=0.4864437959622592";
+      + "&postid="  + postid 
+      + "&id=1&valicode=&temp=0.4864437959622592";
     
     var _s = this;
     
@@ -17,7 +17,6 @@
           opt.done(this, data);
         })
       }else{
-        
         alert('非常抱歉，无法取到物流信息，请稍后再试！');
       }
     })
