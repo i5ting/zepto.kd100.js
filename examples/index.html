@@ -1,0 +1,30 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+  </head>
+  <body>
+    <div id='kd_div'>
+      
+    </div>
+  <script src=zepto.min.js></script>
+  <script src=../src/zepto.kd100.js></script>
+  <script>
+    ;(function($){
+      $('#kd_div').kd100({
+        'type':'yuantong',
+        'postid':'804397890748',
+        done : function(dom, data){
+          var h = "";
+          for(var i in data){
+            var item = data[i];
+            h += "<li>" + item.time + "</li>";
+            h += "<li>" + item.context + "</li>";
+            $(dom).html(h); 
+          }
+        }
+      });
+    })(Zepto)
+      
+  </script>
+  </body>
+</html>
