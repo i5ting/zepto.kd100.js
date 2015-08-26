@@ -1,6 +1,6 @@
 # zepto.kd100.js
 
-
+a zeptojs plugin for query from kd100
 
 ## Usages
 
